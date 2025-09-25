@@ -5,7 +5,37 @@
   <title>Demo Menu Ngang</title>
   <link rel="stylesheet" href="css/layout.css"/>
   <style>
-    /* Menu ngang (menu chính) */
+    #menutrai {
+      font-family:'Times New Roman', Times, serif;
+      font-size: 13px;
+    }
+    #menutrai ul {
+      margin-right: 10px;
+    }
+    #menutrai ul li {
+      list-style-type: none;
+      margin-left: 10px;
+    }
+    a.menutrai:link {
+      color: #b22d30;
+      font-family:'Times New Roman', Times, serif;
+      text-decoration: none;
+    }
+    a.menutrai:visited {
+      color: #b22d30;
+      font-family:'Times New Roman', Times, serif;
+      font-weight: 700;
+    }
+    a.menutrai:hover {
+      color: #5426d1;
+      font-family:'Times New Roman', Times, serif;
+    }
+    a.menutrai:active {
+      color: #190c3f;
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    /* ===== MENU NGANG (menu chính) ===== */
     #menubar {
       background-color: #b22d30;
       height: 52px;
@@ -24,17 +54,17 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-family:'Times New Roman', Times, serif;
       padding: 10px 16px;
       border-radius: 6px;
       transition: 0.2s;
-      font-family: 'Times New Roman', Times, serif;
     }
     #menubar ul li a:hover {
       background-color: white;
       color: #b22d30;
     }
     #menubar ul li a.active {
-      background-color: #fff;
+      background-color: white;
       color: #b22d30;
     }
   </style>
@@ -60,7 +90,7 @@
         </div>
       </div>
 
-      <!-- MENU NGANG CHÍNH -->
+      <!-- ===== MENU NGANG CHÍNH ===== -->
       <div id="menubar">
         <ul>
           <li><a href="index.html" class="active">Trang chủ</a></li>
@@ -84,3 +114,5 @@
   </footer>
 </body>
 </html>
+
+
