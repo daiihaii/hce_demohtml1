@@ -1,86 +1,86 @@
 <!DOCTYPE html>
-<style>
-#menutrai
-{
-    font-family:'Times New Roman', Times, serif
-    font-size: 13px;
-}
-#menutrai ul
-{
-    margin-right: 10px;
-}
-
-#menutrai ul li
-{
-    list-style-type: none;
-    margin-left: 10px;
-}
-a.menutrai:link
-{
-   color: #b22d30;
-   font-family:'Times New Roman', Times, serif;
-   text-decoration: none;
-}
-a.menutrai:visited
-{
-   color: #b22d30;
-   font-family:'Times New Roman', Times, serif;
-   font-weight: 700;
-   
-}
-a.menutrai:hover
-{
-   color: #5426d1;
-   font-family:'Times New Roman', Times, serif
-}
-a.menutrai:active
-{
-   color: #190c3f;
-   font-family:'Times New Roman', Times, serif
-}
-</style>
-<html>
-    <header>
-        <link rel="stylesheet" href="css/layout.css"/>
-
-        <div id="header" style="display: flex;flex-direction: column;height: 180px;background-color: aqua;">
-            <div id="banner" style="height: 126px; background-color: #fff; display: flex; flex-direction: row;text-align: center;justify-content: center;align-items: center;">
-                    <div id="divmenutrai">
-                            <nav id="menutrai">
-                                <ul style="display: flex; flex-direction: row;width: 270px;">
-                                    <li><a href="https://www.kthcm.edu.vn/" class="menutrai">TRANG CHU</a></li>
-                                    <li><a class="menutrai"> EGOV</a></li>
-                                    <li><a class="menutrai">SINH VIEN</a></li>
-                                </ul>
-                            </nav>
-                    </div>
-                    <div style="width: 1000px;">
-                        <img src="images/Ten-truong-do-1000x159.png" width="500" height="80"/>
-                    </div>
-                    <div>
-                        Tim kiem
-                    </div>
-            </div>
-            <div id="menubar" style="background-color: #b22d30;height: 52px;">
-                333
-            </div>
-
-
-
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Menu Ngang</title>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <style>
+    /* Menu ngang (menu chính) */
+    #menubar {
+      background-color: #b22d30;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #menubar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    #menubar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: 0.2s;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    #menubar ul li a:hover {
+      background-color: white;
+      color: #b22d30;
+    }
+    #menubar ul li a.active {
+      background-color: #fff;
+      color: #b22d30;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="header" style="display: flex;flex-direction: column;height: 180px;background-color: aqua;">
+      <div id="banner" style="height: 126px; background-color: #fff; display: flex; flex-direction: row;text-align: center;justify-content: center;align-items: center;">
+        <div id="divmenutrai">
+          <nav id="menutrai">
+            <ul style="display: flex; flex-direction: row;width: 270px;">
+              <li><a href="https://www.kthcm.edu.vn/" class="menutrai">TRANG CHỦ</a></li>
+              <li><a class="menutrai">EGOV</a></li>
+              <li><a class="menutrai">SINH VIÊN</a></li>
+            </ul>
+          </nav>
         </div>
-
-
-    </header>
-    <body>
-        <div id="container" style="min-height:500px;text-align: center;justify-content: center;">
-            <img src="https://www.kthcm.edu.vn/wp-content/uploads/2023/09/HUY7582_2M-2048x1097.jpg" width="1000"/>
+        <div style="width: 1000px;">
+          <img src="images/Ten-truong-do-1000x159.png" width="500" height="80"/>
         </div>
-        <div style="justify-content: center;">
-            NỘI DUNG ĐẶT Ở ĐÂY
+        <div>
+          Tìm kiếm
         </div>
+      </div>
 
-    </body>
-    <footer>
+      <!-- MENU NGANG CHÍNH -->
+      <div id="menubar">
+        <ul>
+          <li><a href="index.html" class="active">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="news.html">Tin tức</a></li>
+          <li><a href="student.html">Sinh viên</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    </footer>
+  <div id="container" style="min-height:500px;text-align: center;justify-content: center;">
+    <img src="https://www.kthcm.edu.vn/wp-content/uploads/2023/09/HUY7582_2M-2048x1097.jpg" width="1000"/>
+  </div>
+  <div style="justify-content: center;">
+    NỘI DUNG ĐẶT Ở ĐÂY
+  </div>
+
+  <footer>
+  </footer>
+</body>
 </html>
